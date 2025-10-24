@@ -1,3 +1,6 @@
+// Huffman.hpp
+// Author: <Your Name>
+// Created: 2025-10-24
 #ifndef HUFFMAN_HPP
 #define HUFFMAN_HPP
 
