@@ -47,6 +47,9 @@ void Huffman::buildTree() {
 
 // Step 3️⃣: Traverse tree recursively to generate binary codes
 void Huffman::generateCodes(Node* node, string code) {
+    // If this node is a leaf (has a character), store its code.
+// Otherwise, go left with '0' and right with '1'.
+
     if (!node) return;
 
     // If it's a leaf node (contains a character)
