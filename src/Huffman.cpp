@@ -24,6 +24,7 @@ void Huffman::freeTree(Node* node) {
 
 // Step 1️⃣: Build frequency table for all characters
 void Huffman::buildFrequencyTable(const string& text) {
+    cout << "Building frequency table..." << endl;
     freq.clear();
     for (char ch : text)
         freq[ch]++;
