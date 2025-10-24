@@ -68,6 +68,7 @@ void Huffman::generatecodeMap(Node* node, string code) {
     generateCodes(node->right, code + "1");
 }
 
+
 // Step 4️⃣: Encode text using the Huffman codes
 string Huffman::encode(const string& text) {
     string encoded;
@@ -75,6 +76,8 @@ string Huffman::encode(const string& text) {
         encoded += codes[ch];
     return encoded;
 }
+
+
 
 // Step 5️⃣: Decode encoded string using the Huffman tree
 string Huffman::decode(const string& encoded) {
@@ -91,6 +94,7 @@ string Huffman::decode(const string& encoded) {
 
     return decoded;
 }
+
 
 // Step 6️⃣: Compress a file (text → encoded binary)
 void Huffman::compressFile(const string& inputFile, const string& outputFile) {
@@ -130,6 +134,8 @@ out << "====\n";
 
     cout << "✅ File compressed successfully → " << outputFile << endl;
 }
+
+
 
 // Step 7️⃣: Decompress file (encoded → text)
 void Huffman::decompressFile(const string& inputFile, const string& outputFile) {
