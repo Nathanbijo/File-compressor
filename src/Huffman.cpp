@@ -121,7 +121,8 @@ void Huffman::compressFile(const string& inputFile, const string& outputFile) {
     out << freq.size() << "\n";
     for (auto &p : freq)
         out << (int)p.first << " " << p.second << "\n";
-    out << "====\n";
+    // The '====' separator marks the end of the header and the beginning of encoded bits.
+out << "====\n";
 
     // Then the encoded text (as '0' and '1' for simplicity)
     out << encoded;
