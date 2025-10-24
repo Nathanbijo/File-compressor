@@ -1,0 +1,11 @@
+# build binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# VSCode
+.vscode/
+
+# logs
+*.log
