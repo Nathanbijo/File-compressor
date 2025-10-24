@@ -18,10 +18,10 @@ using namespace std;
 // =========================
 struct Node {
     char ch;           // Character stored in this node
-    int freq;          // Frequency of the character
+    int frequencyTable;          // frequency of the character
     Node *left, *right;
 
-    Node(char c, int f) : ch(c), freq(f), left(nullptr), right(nullptr) {}
+    Node(char c, int f) : ch(c), frequencyTable(f), left(nullptr), right(nullptr) {}
 };
 
 // =========================
@@ -31,7 +31,7 @@ struct Node {
 // priority_queue in C++ is a max-heap by default; we invert comparison.
 struct Compare {
     bool operator()(Node* a, Node* b) {
-        return a->freq > b->freq;
+        return a->frequencyTable > b->frequencyTable;
     }
 };
 
@@ -41,11 +41,11 @@ struct Compare {
 class Huffman {
 private:
     unordered_map<char, string> codes;     // Character → binary code
-    unordered_map<char, int> freq;         // Character → frequency
+    unordered_map<char, int> frequencyTable;         // Character → frequency
     Node* root;                            // Root node of Huffman tree
 
     // Helper methods (private)
-    void buildFrequencyTable(const string& text);
+    void buildfrequencyTableuencyTable(const string& text);
     void buildTree();
     void generateCodes(Node* node, string code);
     string encode(const string& text);
