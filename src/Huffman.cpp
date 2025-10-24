@@ -1,4 +1,4 @@
-// Write header: number of unique chars and their frequencies.
+// Write header: number of unique chars and their frequencyTableuencies.
 // This header is used during decompression to rebuild the same tree.
 #include "../include/Huffman.hpp"
 
