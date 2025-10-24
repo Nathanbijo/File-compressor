@@ -11,6 +11,9 @@ Huffman::~Huffman() {
 // Recursively delete all nodes in Huffman Tree
 void Huffman::freeTree(Node* node) {
     if (!node) return;
+    // bit '0' -> traverse left child, bit '1' -> traverse right child
+// when leaf encountered, append the character and reset to root
+
     freeTree(node->left);
     freeTree(node->right);
     delete node;
