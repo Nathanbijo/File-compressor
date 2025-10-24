@@ -4,7 +4,8 @@
 // Created: 2025-10-24
 // Short: CLI wrapper for compress/decompress operations
 #include "../include/Huffman.hpp"
-
+#define COLOR_GREEN "\033[32m"
+#define COLOR_RESET "\033[0m"
 // ================================
 // Main menu-driven program
 // ================================

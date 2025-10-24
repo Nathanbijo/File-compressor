@@ -1,7 +1,8 @@
 // Write header: number of unique chars and their frequencyTableuencies.
 // This header is used during decompression to rebuild the same tree.
 #include "../include/Huffman.hpp"
-
+#define COLOR_GREEN "\033[32m"
+#define COLOR_RESET "\033[0m"
 // Constructor initializes root pointer
 Huffman::Huffman() : root(nullptr) {}
 
