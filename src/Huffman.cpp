@@ -30,7 +30,7 @@ void Huffman::buildTree() {
     // Create a leaf node for each character and push into the queue
     for (auto pair : freq)
         pq.push(new Node(pair.first, pair.second));
-
+// pop two smallest frequency nodes and merge them into a parent node
     // Merge nodes until only one root node remains
     while (pq.size() > 1) {
         Node* left = pq.top(); pq.pop();
