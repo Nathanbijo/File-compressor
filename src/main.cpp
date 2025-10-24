@@ -1,3 +1,8 @@
+// File Compressor - main.cpp
+// Huffman File Compressor
+// Author: <Your Name>
+// Created: 2025-10-24
+// Short: CLI wrapper for compress/decompress operations
 #include "../include/Huffman.hpp"
 
 // ================================
