@@ -173,3 +173,7 @@ void Huffman::decompressFile(const string& inputFile, const string& outputFile) 
 
     cout << "✅ File decompressed successfully → " << outputFile << endl;
 }
+// TODO:
+// - pack bits into bytes for true binary output
+// - add CLI flags for verbose/progress
+// - add unit tests for encode/decode consistency
