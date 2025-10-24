@@ -24,6 +24,8 @@ struct Node {
 // =========================
 // Comparator for priority queue (min-heap)
 // =========================
+// Compare functor for priority_queue to build a min-heap based on frequency.
+// priority_queue in C++ is a max-heap by default; we invert comparison.
 struct Compare {
     bool operator()(Node* a, Node* b) {
         return a->freq > b->freq;
