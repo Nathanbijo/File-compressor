@@ -14,7 +14,9 @@ int main() {
     string input, output;
 
     do {
-        cout << "\n======= FILE COMPRESSION TOOL =======\n";
+        cout << "====================================" << endl;
+cout << "  Huffman File Compressor v" << HUFFMAN_VERSION << endl;
+cout << "====================================" << endl;
         cout << "1. Compress File\n";
         cout << "2. Decompress File\n";
         cout << "3. Exit\n";
