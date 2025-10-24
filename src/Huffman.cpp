@@ -1,3 +1,5 @@
+// Write header: number of unique chars and their frequencies.
+// This header is used during decompression to rebuild the same tree.
 #include "../include/Huffman.hpp"
 
 // Constructor initializes root pointer
