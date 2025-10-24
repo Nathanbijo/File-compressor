@@ -49,6 +49,9 @@ private:
 public:
     Huffman();  // Constructor
     ~Huffman(); // Destructor to free memory
+    // Compresses inputFile into outputFile using Huffman coding.
+// - reads the entire input file, builds frequency table,
+// - creates Huffman tree and codes, then writes a header and encoded data.
 
     void compressFile(const string& inputFile, const string& outputFile);
     void decompressFile(const string& inputFile, const string& outputFile);
