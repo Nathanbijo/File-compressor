@@ -153,8 +153,7 @@ void Huffman::decompressFile(const string& inputFile, const string& outputFile) 
     for (int i = 0; i < mapSize; i++) {
         int chVal, frequency;
         in >> chVal >> frequency;
-        freq[(char)chVal] = frequency;
-    }
+        freq[(char)chVal] = frequency;    }
 
     string line;
     getline(in, line); // consume newline
@@ -171,8 +170,7 @@ void Huffman::decompressFile(const string& inputFile, const string& outputFile) 
     ofstream out(outputFile);
     if (!out) {
         cerr << "Error: Cannot create output file.\n";
-        return;
-    }
+        return;   }
 
     out << decoded;
     out.close();
