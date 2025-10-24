@@ -53,6 +53,8 @@ void Huffman::generateCodes(Node* node, string code) {
     if (!node) return;
 
     // If it's a leaf node (contains a character)
+    // node->ch == '\0' indicates an internal node (no char), leaves hold actual characters
+
     if (node->ch != '\0')
         codes[node->ch] = code;
 
