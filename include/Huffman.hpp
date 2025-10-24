@@ -61,7 +61,7 @@ public:
     void compressFile(const string& inputFile, const string& outputFile);
     // Decompresses a file created by compressFile()
 // - reads frequency header, rebuilds Huffman tree
-// - decodes the encoded bitstream and writes original text.
+// - decodeMap the encoded bitstream and writes original text.
 
     void decompressFile(const string& inputFile, const string& outputFile);
 
